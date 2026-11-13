@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.3" />
+    </pattern>
+
+    <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+
+    <filter id="pillShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.7; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.95; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes waveDash {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 200; }
+    }
+    @keyframes barPulse {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.3); }
+    }
+
+    .orb1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: 1000px 300px; }
+    .float1 { animation: floatPill1 5s ease-in-out infinite; }
+    .float2 { animation: floatPill2 6s ease-in-out infinite; }
+    .chartLine { stroke-dasharray: 8 6; animation: waveDash 12s linear infinite; }
+    .bar1 { animation: barPulse 4s ease-in-out infinite; transform-origin: 1020px 240px; }
+    .bar2 { animation: barPulse 5s ease-in-out infinite 1s; transform-origin: 1050px 240px; }
+    .bar3 { animation: barPulse 4.5s ease-in-out infinite 0.5s; transform-origin: 1080px 240px; }
+    .bar4 { animation: barPulse 6s ease-in-out infinite 1.5s; transform-origin: 1110px 240px; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glows (Strictly in Background) -->
+  <circle cx="220" cy="120" r="180" fill="url(#glowGrad1)" filter="url(#blurFilter)" class="orb1" />
+  <circle cx="980" cy="260" r="190" fill="url(#glowGrad2)" filter="url(#blurFilter)" class="orb2" />
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Background Decorative Data Waves & Chart Visuals -->
+  <g opacity="0.45">
+    <path class="chartLine" d="M 50 330 Q 300 280, 550 310 T 1050 250" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+    <path class="chartLine" d="M 50 355 Q 350 300, 650 340 T 1150 280" fill="none" stroke="#818cf8" stroke-width="2" />
+    
+    <!-- Mini Graphic Bar Chart in background right -->
+    <rect class="bar1" x="1020" y="160" width="16" height="80" rx="4" fill="url(#barGrad)" opacity="0.6" />
+    <rect class="bar2" x="1048" y="130" width="16" height="110" rx="4" fill="url(#barGrad)" opacity="0.7" />
+    <rect class="bar3" x="1076" y="110" width="16" height="130" rx="4" fill="url(#barGrad)" opacity="0.8" />
+    <rect class="bar4" x="1104" y="145" width="16" height="95" rx="4" fill="url(#barGrad)" opacity="0.65" />
+    <line x1="1000" y1="242" x2="1135" y2="242" stroke="#64748b" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <!-- Foreground Dynamic Feature Badges (Top & Bottom to prevent overlapping title) -->
+  <g class="float1" filter="url(#pillShadow)">
+    <rect x="90" y="45" width="180" height="34" rx="17" fill="url(#pillGrad1)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" />
+    <text x="180" y="67" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">⚡ SQL WORKBENCHES</text>
+  </g>
+
+  <g class="float2" filter="url(#pillShadow)">
+    <rect x="930" y="45" width="180" height="34" rx="17" fill="url(#pillGrad1)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.6" />
+    <text x="1020" y="67" text-anchor="middle" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">📊 BI &amp; DASHBOARDS</text>
+  </g>
+
+  <!-- FOREGROUND PRIMARY HEADINGS (Clearly visible, high-contrast, uncluttered) -->
+  <!-- Category Tag -->
+  <text x="600" y="118" text-anchor="middle" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="3.5">
+    CURATED ECOSYSTEM DIRECTORY
+  </text>
+
+  <!-- Main Title -->
+  <text x="600" y="178" text-anchor="middle" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+    Database Query &amp; Reporting Tools
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="222" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">
+    The Definitive Guide to SQL Editors, BI Dashboards &amp; Self-Service Analytics
+  </text>
+
+  <!-- Bottom Interactive Tags / Tech Stack Indicators -->
+  <g class="float2" transform="translate(0, 5)">
+    <g transform="translate(240, 275)">
+      <rect x="0" y="0" width="135" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.9" />
+      <text x="67.5" y="19" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Open-Source BI</text>
+    </g>
+    <g transform="translate(390, 275)">
+      <rect x="0" y="0" width="130" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.9" />
+      <text x="65" y="19" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Semantic Layers</text>
+    </g>
+    <g transform="translate(535, 275)">
+      <rect x="0" y="0" width="130" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.9" />
+      <text x="65" y="19" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Modern SaaS</text>
+    </g>
+    <g transform="translate(680, 275)">
+      <rect x="0" y="0" width="140" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.9" />
+      <text x="70" y="19" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Spreadsheet-DBs</text>
+    </g>
+    <g transform="translate(835, 275)">
+      <rect x="0" y="0" width="125" height="30" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" opacity="0.9" />
+      <text x="62.5" y="19" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">SQL IDEs</text>
+    </g>
+  </g>
+
+  <!-- Accent Bottom Border Line -->
+  <rect x="0" y="396" width="1200" height="4" fill="url(#titleGrad)" />
+</svg>
