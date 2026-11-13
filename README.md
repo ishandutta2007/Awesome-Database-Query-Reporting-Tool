@@ -1,70 +1,88 @@
-# Awesome-Database-Query-Reporting-Tool
+# Awesome Database Query & Reporting Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Database Query & Reporting Tool Ecosystem
+> A curated directory of leading **Database Query & Reporting Tools**, **SQL Editors**, **Business Intelligence (BI) Dashboards**, and **Self-Service Analytics Platforms**.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on SQL Editors, BI Dashboards & Self-Service Data Exploration*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Database Query & Reporting Tools**. These tools help analysts and engineers connect to databases, write SQL, build dashboards, and share insights—covering everything from lightweight SQL editors to full BI platforms with semantic layers and embedded analytics.
-
-**Examples** include Metabase, Apache Superset, Redash, Lightdash, DBeaver, PopSQL, Mode Analytics, Hex, Holistics, and Zoho Analytics (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted BI, open-source SQL workbenches, and community-driven reporting platforms—ideal for organizations seeking data sovereignty and predictable costs over per-seat SaaS licensing. The open-source landscape is genuinely mature: **Metabase** offers unlimited users on the free self-hosted tier [citation:13], **Apache Superset** ships 40+ visualization types with a SQL IDE [citation:4], and **Lightdash** turns dbt models into governed BI without SQL [citation:5]. Note that **Redash is in maintenance mode** with slowed development since the Databricks acquisition—avoid for new projects [citation:3].
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Mode Analytics](https://mode.com/)** | SQL-first BI platform with Python/R notebooks, collaborative reports, and visual exploration. Positioned between pure SQL editors and full BI suites. | Business: ~**$35/user/month** (annual ~$10,500/yr for small teams); Enterprise: custom ($100K+/yr est.) [citation:8] | Free Community plan for individuals; no permanent free tier for teams |
-| **[PopSQL](https://popsql.com/)** | Collaborative SQL editor with dashboards, version history, and dbt integration. **Viewers are always free**—only editors are billed. | Free: **$0** (10 queries, 2 connections); Premium: **$19/editor/month**; Business: **$36/editor/month** [citation:7] | **Free**: 10 queries, 2 database connections, 2 dashboards, weekly schedules, 1-day version history [citation:7] |
-| **[Hex](https://hex.tech/)** | Collaborative data workspace combining SQL, Python, and no-code cells with AI assistance. Positioned for data science and advanced analytics teams. | Professional: **$36/editor/month**; Team: **$75/editor/month** (14-day free trial); Enterprise: custom [citation:9] | **Community (free)**: connect any data source, all cell types, Hex agent trial; Team trial: 14 days, no credit card [citation:9] |
-| **[Holistics](https://www.holistics.io/)** | BI platform with a modeling layer (analytics-as-code) for governed self-service. Strong for teams wanting Looker-style modeling without Looker pricing. | Entry: **SGD 210/mo** (100 objects, 10 users); Standard: **SGD 770/mo** (300 objects, 20 users); Enterprise: custom [citation:10] | No free tier; paid plans only |
-| **[Zoho Analytics](https://www.zoho.com/analytics/)** | BI and analytics platform within Zoho ecosystem with Ask Zia AI assistant, 100+ pre-built connectors, and embedded BI capabilities. | Quote-only (contact Zoho for pricing) | Free plan available with limited rows/features; trial via Zoho |
-| **[Looker (Google Cloud)](https://looker.com/)** | Enterprise BI built on LookML semantic modeling. Governed self-service with consistent metric definitions. | Quote-only (enterprise contract; Google Cloud billing) | No free tier; trial via Google Cloud sales |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Metabase](https://github.com/metabase/metabase)** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | **The friendliest open-source BI tool with a genuinely unlimited free tier.** The open-source edition is **free with unlimited users, unlimited questions, unlimited dashboards**, and 20+ data source connections including PostgreSQL, MySQL, BigQuery, Snowflake, and ClickHouse [citation:13]. Includes query builder, SQL editor, dashboard subscriptions, AI questions with your own model key, and guest embeds (with "Powered by Metabase" badge) [citation:13]. **Best for business users who need to be productive without SQL.** Note: white-labeling and embedded analytics require the Pro plan at $575/month [citation:3]. |
-| **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | **The enterprise-grade open-source BI platform.** Ships with **40+ pre-installed visualization types**, a SQL IDE, no-code viz builder, and plug-in architecture for custom charts [citation:4]. Connects to any SQL-based database at petabyte scale. Lightweight and highly scalable [citation:4]. **Best for technical teams needing governance and scale.** Heavier operational footprint than Metabase (Redis + Celery recommended). |
-| **[Lightdash](https://github.com/lightdash/lightdash)** | [![Stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) | **The BI platform built for dbt.** Turns existing dbt models into dashboards without SQL—uses dbt YAML as the semantic layer [citation:1]. Includes AI analyst co-pilot, version control, CI/CD tooling, and staging environments. **Cloud Pro is $3,000/month flat with unlimited users** and a 21-day free trial [citation:5]. **Best for dbt-native teams** where metrics are managed as code. Self-hosting requires Kubernetes, Postgres, S3, and a browserless container [citation:1]. |
-| **[DBeaver Community](https://github.com/dbeaver/dbeaver)** | [![Stars](https://img.shields.io/github/stars/dbeaver/dbeaver?style=social&color=white)](https://github.com/dbeaver/dbeaver/stargazers) | **The universal free open-source database workbench.** Apache 2.0 desktop client for relational databases (MySQL, PostgreSQL, SQLite, SQL Server, Oracle, ClickHouse, DuckDB, and more) [citation:6]. Includes SQL Editor, Data Editor, ER diagrams, data transfer, and AI Chat. **Best for database administrators and developers** who need a daily SQL workbench rather than a BI dashboard tool. Community focuses on relational JDBC; NoSQL requires the commercial PRO edition [citation:6]. |
-| **[Redash](https://github.com/getredash/redash)** | [![Stars](https://img.shields.io/github/stars/getredash/redash?style=social&color=white)](https://github.com/getredash/redash/stargazers) | **⚠️ In maintenance mode—use only if already deployed.** SQL-first BI tool with query editor, autocomplete, snippets, and results caching [citation:1]. Supports 30+ SQL/NoSQL data sources. **However, development has slowed dramatically**: after Databricks acquired Redash in 2020, the hosted cloud shut down in 2021, and the project went four years without a release before community maintenance shipped three versions between Jan 2025 and Mar 2026 [citation:3]. **No AI query generation; no native embedded analytics; no multi-tenant support** [citation:3]. **Avoid for new projects.** |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Evidence](https://github.com/evidence-dev/evidence)** | [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) | **Code-first BI with SQL + Markdown.** Everything is code—enables version control, testing, and real-time syntax validation. Cloud version (Evidence Studio, June 2025) adds AI agents to generate and edit queries from natural language [citation:1]. **Best for teams treating dashboards as code.** Replaces Tableau, Looker, Power BI, and notebook tools like Hex [citation:1]. ~28.8k stars as of Oct 2026. |
-
-**Frameworks for building custom systems**: Choose **Metabase** for unlimited-user self-hosted BI with the friendliest UX, **Apache Superset** for enterprise-scale governance with 40+ viz types, **Lightdash** for dbt-native metric layers managed as code, and **DBeaver** for daily SQL workbench needs—all free or with generous open-source tiers. **Redash is maintenance-only** and should not be selected for new deployments [citation:3].
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Database query tools connect to production data sources; enforce read-only credentials where appropriate, row-level security for dashboards, and audit logging for query access.
-- **Open-source BI has a critical distinction: unlimited users vs. enterprise features.** Metabase's open-source edition is genuinely unlimited-user [citation:13], but white-labeling and embedded analytics require the $575/month Pro plan [citation:3]. Lightdash's self-hosted OSS is free but requires dbt and Kubernetes infrastructure [citation:1][citation:5]. **Redash is in maintenance mode**—the community recommends migration for teams needing AI querying, embedded analytics, or active security patches [citation:3]. Commercial SaaS pricing varies: PopSQL charges only for editors (viewers free) [citation:7], Hex starts at $36/editor/month [citation:9], and Mode Enterprise can exceed $100K/year [citation:8].
+Discover and compare top SaaS platforms and open-source database query tools, SQL IDEs, and BI reporting software designed for data analysts, database administrators, and software engineers.
 
 ---
 
-**Made for data analysts, database administrators, BI developers, and organizations building self-service analytics infrastructure.**  
-Let's make database query and reporting more open, accessible, and governed.
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Key Architectural Distinctions](#key-architectural-distinctions)
+- [How to Contribute](#how-to-contribute)
+- [License & Disclaimer](#license--disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global business intelligence and reporting software market is estimated at **$41 billion to $44 billion** and is projected to surpass **$65+ billion** by 2030, expanding at a CAGR of ~9%. The sector exhibits **moderate fragmentation**: while mega-cap cloud providers (Microsoft Power BI, Salesforce Tableau, Google Cloud Looker) anchor large-scale enterprise deployments, substantial market share is contested by specialized, high-growth modern data stack (MDS) vendors and agile open-source platforms focusing on code-first BI, dbt-native semantic modeling, and collaborative SQL IDEs.
+
+---
+
+## SaaS & Hosted Platforms
+
+A comprehensive comparison of top commercial SaaS database querying, reporting, and BI tools. Platforms are ranked by parent company size, enterprise valuation, or annual revenue in descending order.
+
+| Product | Company Scale (Revenue / Valuation) | Description | Starting Pricing Tier | Free Tier & Trial Limits |
+|:---|:---|:---|:---|:---|
+| **[Looker (Google Cloud)](https://looker.com/)** | **~$2.2T** market cap (Alphabet parent); acquired Looker for **$2.6B**; Looker platform ARR estimated at $500M+ | Enterprise-grade semantic data platform and BI suite built on LookML data modeling with governed metrics. | **$5,000 / month** (Standard Platform, billed annually at ~$60,000/yr; includes 10 Standard + 2 Developer users) | **No permanent free plan**; 30-day guided enterprise proof-of-concept trial via Google Cloud sales |
+| **[Zoho Analytics](https://www.zoho.com/analytics/)** | **~$12B - $12.5B** valuation; **~$1.4B** FY25 ARR (bootstrapped & profitable) | Cloud BI and self-service analytics suite featuring Zia AI assistant, 100+ connectors, and embedded portals. | **$24 / month** (Basic plan billed annually, or $30/mo billed monthly; includes 2 users and 500,000 rows) | **Permanent Free Tier**: 2 users, 2 workspaces, 10,000 rows limit; **15-day free trial** for premium tiers (no credit card required) |
+| **[Mode Analytics](https://mode.com/)** | **$4.2B** valuation (parent ThoughtSpot; acquired Mode for **$200M**; combined ARR exceeds $150M) | Collaborative data platform uniting SQL editor, interactive Python/R notebooks, and visual reporting for data teams. | **$35 / user / month** (Business plan, min team commitment ~$10,500/year) | **Free Community Plan**: 1 user, unlimited personal queries/notebooks; **14-day free trial** of Business plan with full collaboration features |
+| **[Hex](https://hex.tech/)** | **$1.2B** valuation (Series D in Oct 2026; $272M total funding; $10M–$50M estimated ARR) | Modern collaborative data workspace integrating SQL, Python, drag-and-drop visualizations, and agentic AI. | **$36 / editor / month** (Professional plan; viewers are always free) | **Permanent Community Plan (Free)**: 1 editor, 3 active projects, unlimited viewers, standard compute; **14-day free trial** for Teams tier |
+| **[PopSQL](https://popsql.com/)** | Acquired by Timescale ($18.5M prior funding; parent Timescale raised $180M+; estimated ARR $5M–$10M) | Collaborative SQL editor and query workspace with automatic schema visualization, git integration, and team shared folders. | **$19 / editor / month** (Premium plan; viewers are completely free) | **Permanent Free Tier**: 1 editor, unlimited free viewers, max 2 database connections, 10 saved queries, 2 dashboards, 1-day version history |
+| **[Holistics](https://www.holistics.io/)** | **$4M - $5M** ARR (bootstrapped / independent; ~50 employees) | Analytics-as-code BI platform utilizing a reusable modeling layer (AML) for governed self-service reporting. | **$210 / month** (SGD 210/mo for Entry tier; includes 100 data objects and 10 users) | **No permanent free plan**; **14-day free trial** with full platform capabilities, 5 database connections, and sample datasets |
+
+---
+
+## Open-Source GitHub Projects
+
+Leading open-source database query workbenches, SQL editors, headless semantic layers, and self-hosted BI dashboards. Sorted by GitHub stars in descending order.
+
+| Project | GitHub Stars | Description | Core Capabilities |
+|:---|:---:|:---|:---|
+| **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Modern enterprise-grade business intelligence, SQL exploration, and data visualization web application. | 40+ visualization types, petabyte-scale SQL IDE, semantic dataset metrics, granular role-based security (RBAC). |
+| **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | Open-source smart spreadsheet alternative to Airtable that connects directly to relational databases. | Converts PostgreSQL, MySQL, SQL Server, and SQLite into interactive grid, gallery, kanban, and form views with REST APIs. |
+| **[DBeaver Community](https://github.com/dbeaver/dbeaver)** | [![Stars](https://img.shields.io/github/stars/dbeaver/dbeaver?style=social&color=white)](https://github.com/dbeaver/dbeaver/stargazers) | Universal desktop database management tool and SQL client for developers, DBAs, and analysts. | Supports 100+ JDBC drivers (PostgreSQL, MySQL, SQLite, Oracle, ClickHouse, DuckDB); includes visual ER diagrams and SQL autocomplete. |
+| **[Metabase](https://github.com/metabase/metabase)** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | The simplest, most intuitive self-hosted BI dashboard and visual query builder for non-technical users. | **Genuinely free open-source edition** with unlimited users and dashboards, visual query drill-throughs, SQL editor, and email alerts. |
+| **[Directus](https://github.com/directus/directus)** | [![Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers) | Real-time modular data platform that layers an administrative dashboard and data studio over SQL databases. | Instant visual query dashboards, no-code data studio, granular RBAC, automatic GraphQL and REST API generation. |
+| **[Redash](https://github.com/getredash/redash)** | [![Stars](https://img.shields.io/github/stars/getredash/redash?style=social&color=white)](https://github.com/getredash/redash/stargazers) | SQL-first data visualization and sharing platform connecting directly to databases and query engines. | Query editor with autocomplete and snippets, 30+ supported data connectors, scheduled dashboard refreshes, query result caching. |
+| **[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio)** | [![Stars](https://img.shields.io/github/stars/beekeeper-studio/beekeeper-studio?style=social&color=white)](https://github.com/beekeeper-studio/beekeeper-studio/stargazers) | Modern, clean, and lightweight cross-platform SQL editor and database manager built with Vue and Electron. | Clean tabbed SQL editor, schema browser, SSL/SSH tunnel encryption, data table editor for PostgreSQL, MySQL, SQLite, SQL Server, CockroachDB. |
+| **[Cube](https://github.com/cube-js/cube)** | [![Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) | Universal semantic layer and headless data modeling engine for modern data applications and BI tools. | Pre-aggregation caching engine, code-based data modeling, access control, and SQL/REST/GraphQL API endpoints. |
+| **[Grist](https://github.com/gristlabs/grist-core)** | [![Stars](https://img.shields.io/github/stars/gristlabs/grist-core)](https://github.com/gristlabs/grist-core/stargazers) | Relational spreadsheet-database hybrid combining spreadsheet flexibility with real database relational integrity. | Python formula evaluation, custom interactive dashboard layouts, access rules down to column/row level, offline-ready. |
+| **[Evidence](https://github.com/evidence-dev/evidence)** | [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) | Code-first BI reporting framework delivering interactive data products generated via Markdown and SQL. | Version control via Git, fast static build generation, DuckDB in-browser execution, parameterized automated reports. |
+| **[Lightdash](https://github.com/lightdash/lightdash)** | [![Stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) | Open-source Looker alternative built natively on top of dbt core for version-controlled metric definitions. | Reads dbt project models and YAML directly, self-service charting for business users, Git pull-request previews for metrics. |
+| **[SQLPad](https://github.com/sqlpad/sqlpad)** | [![Stars](https://img.shields.io/github/stars/sqlpad/sqlpad?style=social&color=white)](https://github.com/sqlpad/sqlpad/stargazers) | Lightweight web-based SQL editor and simple chart builder designed for internal team queries. | Docker-first deployment, connection management, query sharing via URL, support for Postgres, MySQL, SQL Server, ClickHouse, Snowflake. |
+| **[Rill](https://github.com/rilldata/rill)** | [![Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers) | Fast, operational BI and dashboard tool pairing DuckDB/ClickHouse with opinionated metrics exploratory UX. | Sub-second interactive dashboards, local-first developer experience, code-driven dashboard definitions in YAML and SQL. |
+
+---
+
+## Key Architectural Distinctions
+
+When selecting a database query and reporting tool, consider these fundamental paradigms:
+
+1. **SQL Workbenches vs. Business Dashboards**: Tools like **DBeaver** and **Beekeeper Studio** are developer/DBA-focused clients for table management, indexing, and raw DDL/DQL execution. In contrast, **Metabase**, **Apache Superset**, and **Lightdash** are built for cross-functional reporting with non-technical business consumers.
+2. **Semantic-Layered BI vs. Direct SQL BI**: **Looker** and **Cube** separate metric definition from data presentation through reusable modeling code (LookML, Cube data models, or dbt metrics in **Lightdash**). Direct SQL tools (**Redash**, **Evidence**) run queries directly against analytical warehouses (Snowflake, BigQuery, ClickHouse).
+3. **Database-Spreadsheet Hybrids**: Platforms like **NocoDB** and **Grist** provide spreadsheet-like interfaces on top of relational engines, enabling operational record editing alongside custom visual reports.
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork this repository.
+2. Ensure new SaaS additions include transparent pricing and specific free-tier/trial terms.
+3. Ensure open-source additions include active GitHub repositories with valid social star badges.
+4. Keep entries categorized, objective, and alphabetical or star-ranked.
+5. Submit a pull request detailing your suggested changes.
+
+---
+
+## License & Disclaimer
+
+- Curated by the community for informational and evaluation purposes.
+- Trademarks, product logos, and brand names belong to their respective corporate owners.
