@@ -1,6 +1,6 @@
 # Awesome-Database-Query-Reporting-Tool
 
-# Top Database Query & Reporting Tool Ecosystem
+## Top Database Query & Reporting Tool Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on SQL Editors, BI Dashboards & Self-Service Data Exploration*  
