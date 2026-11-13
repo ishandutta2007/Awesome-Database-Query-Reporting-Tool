@@ -4,7 +4,7 @@
 
 # 📊 Awesome Database Query & Reporting Tools
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Query-Reporting-Tool?style=flat-square&color=gold" alt="GitHub Stars" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Query-Reporting-Tool?style=flat-square&color=blue" alt="GitHub Forks" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Query-Reporting-Tool?style=flat-square&color=gold" alt="GitHub_Stars" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Query-Reporting-Tool?style=flat-square&color=blue" alt="GitHub Forks" /></a><a href="https://github.com/ishandutta2007/Awesome-Database-Query-Reporting-Tool/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > 🚀 A curated directory of leading **Database Query & Reporting Tools**, **SQL Editors**, **Business Intelligence (BI) Dashboards**, and **Self-Service Analytics Platforms**.
 
@@ -50,9 +50,9 @@ A comprehensive comparison of top commercial SaaS database querying, reporting, 
 
 ## 🐙 Open-Source GitHub Projects
 
-Leading open-source database query workbenches, SQL editors, headless semantic layers, and self-hosted BI dashboards. Sorted by GitHub stars in descending order.
+Leading open-source database query workbenches, SQL editors, headless semantic layers, and self-hosted BI dashboards. Sorted by GitHub_Stars in descending order.
 
-| 📦 Project | ⭐ GitHub Stars | 📝 Description | ⚙️ Core Capabilities |
+| 📦 Project | ⭐ GitHub_Stars | 📝 Description | ⚙️ Core Capabilities |
 |:---|:---:|:---|:---|
 | **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Modern enterprise-grade business intelligence, SQL exploration, and data visualization web application. | 40+ visualization types, petabyte-scale SQL IDE, semantic dataset metrics, granular role-based security (RBAC). |
 | **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | Open-source smart spreadsheet alternative to Airtable that connects directly to relational databases. | Converts PostgreSQL, MySQL, SQL Server, and SQLite into interactive grid, gallery, kanban, and form views with REST APIs. |
@@ -86,7 +86,7 @@ Contributions are warmly welcome! Please follow these steps:
 
 1. 🍴 Fork this repository.
 2. 🔍 Ensure new SaaS additions include transparent pricing and specific free-tier/trial terms.
-3. ⭐ Ensure open-source additions include active GitHub repositories with valid social star badges.
+3. ⭐ Ensure open-source additions include active GitHub repositories with valid social Stars_Badges.
 4. 📋 Keep entries categorized, objective, and alphabetical or star-ranked.
 5. 🚀 Submit a pull request detailing your suggested changes.
 
